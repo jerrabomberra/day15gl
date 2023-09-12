@@ -22,10 +22,12 @@ def get_input():
         if coffee in MENU.keys():
             return coffee
 
-print(get_input())
+print(get_input() + "☕")
+resources =get_input()
+print(f"Water: {resources['water']}ml")
 
 def exit_machine():
-    pass
+        pass
 
 def print_report():
     pass
