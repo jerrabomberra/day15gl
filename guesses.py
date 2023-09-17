@@ -3,7 +3,7 @@ from random import randint
 number =randint(1,100)
 print(number)
 
-def game():
+def game(guesses):
     """Plays the game"""
     guess =int(input("Guess a number between 1 and 100. : "))
     while guess != number:
@@ -28,5 +28,5 @@ while play_game == True:
     else:
         play_game = False
     guess = int(input("Guess again a number between 1 and 100. : "))
-game()
+game(0)
 
